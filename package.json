@@ -15,6 +15,12 @@
   "bugs": {
     "url": "https://github.com/ymeu/frontend-project-44/issues"
   },
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "type": "module",
-  "homepage": "https://github.com/ymeu/frontend-project-44#readme"
+  "homepage": "https://github.com/ymeu/frontend-project-44#readme",
+  "dependencies": {
+    "make": "^0.8.1"
+  }
 }
