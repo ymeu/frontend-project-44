@@ -16,7 +16,8 @@
     "url": "https://github.com/ymeu/frontend-project-44/issues"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "type": "module",
   "homepage": "https://github.com/ymeu/frontend-project-44#readme",
