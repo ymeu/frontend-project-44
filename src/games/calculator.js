@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt, userName, throwWrongAnswer } from '../index.js';
+import { getRandomArbitrary, isCorrect, userName, throwWrongAnswer } from '../index.js';
 
 let result = null;
 
@@ -20,9 +20,6 @@ const renderMathOperationString = (number1, number2, operator) => {
   return `${number1} ${operator} ${number2}`;
 };
 
-// checking the answer
-const isCorrect = (yourAnswer, savedResult) => parseInt(yourAnswer, 10) === savedResult;
-
 const operators = ['+', '-', '*'];
 
 // main game function
@@ -32,7 +29,11 @@ const calcGame = () => {
   for (let i = 0; i < operators.length; i += 1) {
     console.log(
       'Question: ',
-      renderMathOperationString(getRandomInt(), getRandomInt(), operators[i]),
+      renderMathOperationString(
+        getRandomArbitrary(1, 100),
+        getRandomArbitrary(1, 100),
+        operators[i],
+      )
     );
     const yourAnswer = readlineSync.question('Your answer: ');
 

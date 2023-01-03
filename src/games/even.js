@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt, userName, throwWrongAnswer } from '../index.js';
+import { getRandomArbitrary, userName, throwWrongAnswer } from '../index.js';
 
 const isEven = (number) => {
   if (number % 2 === 0) {
@@ -12,7 +12,7 @@ const evenGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
   for (let i = 0; i < 3; i += 1) {
-    const randomNumber = getRandomInt();
+    const randomNumber = getRandomArbitrary(1, 100);
     const result = isEven(randomNumber);
     console.log('Question: ', randomNumber);
     const yourAnswer = readlineSync.question('Your answer: ');

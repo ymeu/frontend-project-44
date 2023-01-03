@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
 
-// export const getRandomInt = () => Math.floor(Math.random() * 100);
-export const getRandomInt = () => Math.floor(Math.random() * (100 - 1) + 1);
+export const getRandomArbitrary = (min, max) =>
+  Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1))
+  + Math.ceil(min);
 
 export let userName = null;
 export const greet = () => {
@@ -10,9 +11,11 @@ export const greet = () => {
   console.log(`Hello, ${userName}!`);
 };
 
+export const isCorrect = (yourAnswer, savedResult) => parseInt(yourAnswer, 10) === savedResult;
+
 export const throwWrongAnswer = (userAnswer, result) => {
   console.log(
-    `"${userAnswer}" is wrong answer ;(. Correct answer was "${result}".`
+    `"${userAnswer}" is wrong answer ;(. Correct answer was "${result}".`,
   );
   return console.log(`Let's try again, ${userName}!`);
 };

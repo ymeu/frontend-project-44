@@ -6,8 +6,11 @@
 // brain-even
 https://asciinema.org/a/hloeRus4DmjV85wYQVWcEs9EF
 
-//brain-calc
+// brain-calc
 https://asciinema.org/a/hOowj9CJaxcayVWKYYjcbbEBL 
 
-//brain-gcd
+// brain-gcd
 https://asciinema.org/a/rp2R1BSSPA72409Wp9wUbvZjd
+
+// brain-progression
+https://asciinema.org/a/ggsM7cTziW4urHzyrwPmFJ3CD

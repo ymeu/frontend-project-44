@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomInt, userName, throwWrongAnswer } from '../index.js';
+import { getRandomArbitrary, isCorrect, userName, throwWrongAnswer } from '../index.js';
 
 let result = null;
 
@@ -37,7 +37,7 @@ const renderTwoNumbers = (number1, number2) => {
 };
 
 // checking the answer
-const isCorrect = (yourAnswer, savedResult) => parseInt(yourAnswer, 10) === savedResult;
+// const isCorrect = (yourAnswer, savedResult) => parseInt(yourAnswer, 10) === savedResult;
 
 // main game function
 const gcdGame = () => {
@@ -46,7 +46,7 @@ const gcdGame = () => {
   for (let i = 0; i < 3; i += 1) {
     console.log(
       'Question: ',
-      renderTwoNumbers(getRandomInt(), getRandomInt()),
+      renderTwoNumbers(getRandomArbitrary(1, 100), getRandomArbitrary(1, 100)),
     );
     const yourAnswer = readlineSync.question('Your answer: ');
 
