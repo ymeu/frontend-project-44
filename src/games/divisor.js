@@ -44,10 +44,14 @@ const gcdGame = () => {
   console.log('Find the greatest common divisor of given numbers.');
 
   for (let i = 0; i < 3; i += 1) {
-    console.log(
-      'Question: ',
-      renderTwoNumbers(getRandomArbitrary(1, 100), getRandomArbitrary(1, 100)),
-    );
+    // console.log(
+    //   'Question: ',
+    //   renderTwoNumbers(getRandomArbitrary(1, 100), getRandomArbitrary(1, 100)),
+    // );
+    console.log(`Question: ${renderTwoNumbers(
+      getRandomArbitrary(1, 100),
+      getRandomArbitrary(1, 100),
+    )}`);
     const yourAnswer = readlineSync.question('Your answer: ');
 
     if (isCorrect(yourAnswer, result) === true) {

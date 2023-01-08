@@ -35,10 +35,7 @@ const progressionGame = () => {
   console.log('Find the greatest common divisor of given numbers.');
 
   for (let i = 0; i < 3; i += 1) {
-    console.log(
-      'Question: ',
-      renderProgression(),
-    );
+    console.log(`Question: ${renderProgression()}`);
     const yourAnswer = readlineSync.question('Your answer: ');
 
     if (isCorrect(yourAnswer, result) === true) {

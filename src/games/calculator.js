@@ -28,12 +28,11 @@ const calcGame = () => {
 
   for (let i = 0; i < operators.length; i += 1) {
     console.log(
-      'Question: ',
-      renderMathOperationString(
+      `Question: ${renderMathOperationString(
         getRandomArbitrary(1, 20),
         getRandomArbitrary(1, 20),
         operators[i],
-      )
+      )}`,
     );
     const yourAnswer = readlineSync.question('Your answer: ');
 

@@ -58,10 +58,7 @@ const primeGame = () => {
   for (let i = 0; i < 3; i += 1) {
     const randomNumber = getRandomArbitrary(1, 100);
     const result = isPrime(randomNumber);
-    console.log(
-      'Question: ',
-      randomNumber,
-    );
+    console.log(`Question: ${randomNumber}`);
     const yourAnswer = readlineSync.question('Your answer: ');
 
     if (yourAnswer === result) {
