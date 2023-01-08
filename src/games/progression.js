@@ -12,8 +12,8 @@ let result = null;
 const renderProgression = () => {
   const progressionStart = getRandomArbitrary(1, 15);
   const progressionLength = getRandomArbitrary(5, 10);
-  const progressionStep = getRandomArbitrary(2, 7);
-  const dotsPosition = getRandomArbitrary(0, progressionLength);
+  const progressionStep = getRandomArbitrary(1, 2);
+  const dotsPosition = getRandomArbitrary(0, progressionLength - 1);
   const iterationLimit = progressionStart + progressionLength * progressionStep;
 
   const progression = [];
