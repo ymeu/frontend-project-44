@@ -7,5 +7,5 @@ const greeting = () => {
   console.log(`Hello, ${userName}!`);
 };
 
-// export { userName, greeting };
+export default greeting;
 // export default greeting;

@@ -17,10 +17,10 @@ const renderPrimeNumber = () => {
   let divisorCounter = 0;
 
   // eslint-disable-next-line no-restricted-syntax
-  for (let each of seqNumbers) {
+  for (const each of seqNumbers) {
     divisorCounter = 0;
     // eslint-disable-next-line no-restricted-syntax
-    for (let divisor of divisors) {
+    for (const divisor of divisors) {
       if (each === divisor) {
         primeNumbers.push(each);
       }
@@ -31,6 +31,7 @@ const renderPrimeNumber = () => {
         // and therefore can still be not a prime number. The prime needs to satisfy all the =>
         // divisors
         divisorCounter += 1;
+        // eslint-disable-next-line no-continue
         continue;
       } else if (each === primeNumbers[primeNumbers.length - 1]) {
         break;

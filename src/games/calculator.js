@@ -1,5 +1,9 @@
 import readlineSync from 'readline-sync';
-import { getRandomArbitrary, isCorrect, userName, throwWrongAnswer } from '../index.js';
+import {
+  getRandomArbitrary,
+  isCorrect, userName,
+  throwWrongAnswer,
+} from '../index.js';
 
 let result = null;
 
