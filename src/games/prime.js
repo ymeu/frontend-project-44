@@ -12,7 +12,7 @@ const renderPrimeNumber = () => {
   const seqNumbers = getNumbersSequence(2, 100);
   const primeNumbers = [];
   const divisors = [2, 3, 5, 7]; // first 4 prime numbers, any other number that they are
-  // divided by without remainder is not prime. So to check if number is prime, these 
+  // divided by without remainder is not prime. So to check if number is prime, these
   // numbers will be used
   let divisorCounter = 0;
 

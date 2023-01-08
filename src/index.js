@@ -1,9 +1,10 @@
 import readlineSync from 'readline-sync';
 
-export const getRandomArbitrary = (min, max) =>
-  Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min) + 1))
+export const getRandomArbitrary = (min, max) => Math.floor(Math.random()
+  * (Math.floor(max) - Math.ceil(min) + 1))
   + Math.ceil(min);
 
+// eslint-disable-next-line import/no-mutable-exports
 export let userName = null;
 export const greet = () => {
   console.log('Welcome to the Brain Games!');
