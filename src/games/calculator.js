@@ -30,8 +30,8 @@ const calcGame = () => {
     console.log(
       'Question: ',
       renderMathOperationString(
-        getRandomArbitrary(1, 100),
-        getRandomArbitrary(1, 100),
+        getRandomArbitrary(1, 20),
+        getRandomArbitrary(1, 20),
         operators[i],
       )
     );
