@@ -32,7 +32,7 @@ const renderProgression = () => {
 
 // main game function
 const progressionGame = () => {
-  console.log('Find the greatest common divisor of given numbers.');
+  console.log('What number is missing in the progression?');
 
   for (let i = 0; i < 3; i += 1) {
     console.log(`Question: ${renderProgression()}`);
