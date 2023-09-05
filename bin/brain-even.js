@@ -4,5 +4,3 @@ import { isEven } from '../src/games/even.js';
 
 greet();
 primeAndEvenGame('even', isEven);
-
-export default primeAndEvenGame;

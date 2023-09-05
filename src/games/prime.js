@@ -1,13 +1,10 @@
-import readlineSync from 'readline-sync';
-import { getRandomArbitrary, userName, throwWrongAnswer } from '../index.js';
-
-// function that gets the sequence between given values
+// gets the sequence between given values
 const getNumbersSequence = (start, end) => (
   Array(end - start + 1)
     .fill()
     .map((_, idx) => start + idx));
 
-// function that gets the prime number array
+// gets the prime number array
 const renderPrimeNumber = () => {
   const seqNumbers = getNumbersSequence(2, 100);
   const primeNumbers = [];
@@ -53,22 +50,4 @@ const isPrime = (randomNumber) => {
   return 'no';
 };
 
-// main game function
-const primeGame = () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  for (let i = 0; i < 3; i += 1) {
-    const randomNumber = getRandomArbitrary(1, 100);
-    const result = isPrime(randomNumber);
-    console.log(`Question: ${randomNumber}`);
-    const yourAnswer = readlineSync.question('Your answer: ');
-
-    if (yourAnswer === result) {
-      console.log('Correct!');
-    } else {
-      return throwWrongAnswer(yourAnswer, result);
-    }
-  }
-  return console.log(`Congratulations, ${userName}!`);
-};
-
-export default primeGame;
+export default isPrime;

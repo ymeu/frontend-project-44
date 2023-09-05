@@ -4,5 +4,3 @@ import { greet } from '../src/index.js';
 
 greet();
 progressionGame();
-
-export default progressionGame;
