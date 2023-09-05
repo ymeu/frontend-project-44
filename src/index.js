@@ -20,3 +20,20 @@ export const throwWrongAnswer = (userAnswer, result) => {
   );
   return console.log(`Let's try again, ${userName}!`);
 };
+
+export const primeAndEvenGame = (gameName, isFn) => {
+  console.log(`Answer "yes" if given number is ${gameName}. Otherwise answer "no".`);
+  for (let i = 0; i < 3; i += 1) {
+    const randomNumber = getRandomArbitrary(1, 100);
+    const result = isFn(randomNumber);
+    console.log(`Question: ${randomNumber}`);
+    const yourAnswer = readlineSync.question('Your answer: ');
+
+    if (yourAnswer === result) {
+      console.log('Correct!');
+    } else {
+      return throwWrongAnswer(yourAnswer, result);
+    }
+  }
+  return console.log(`Congratulations, ${userName}!`);
+};

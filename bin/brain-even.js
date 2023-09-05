@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-import evenGame from '../src/games/even.js';
-import { greet } from '../src/index.js';
+import { greet, primeAndEvenGame } from '../src/index.js';
+import { isEven } from '../src/games/even.js';
 
 greet();
-evenGame();
+primeAndEvenGame('even', isEven);
 
-export default evenGame;
+export default primeAndEvenGame;
